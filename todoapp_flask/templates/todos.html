@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}myTodos{% endblock %}
+
+{% block content %} 
+    {% for task in tasks %}
+        <p>{{ task.mytasks }}</p> <a href="/delete/{{ task.mytasks }}" style="border: 1px solid red;">Delete</a>
+    {% endfor %}
+{% endblock %}
